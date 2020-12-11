@@ -34,7 +34,7 @@ def load_classics(model, dataloaders, class_names):
                         selected_preds.append(preds[0])
 
         print(f"Classic {class_name}:")
-        for i in range(num_images):
+        for i in range(len(selected_inputs)):
             util.plot_prediction(selected_inputs[i].cpu().data, class_idx,
                                  selected_preds[i], class_names)
         all_inputs.extend(selected_inputs)

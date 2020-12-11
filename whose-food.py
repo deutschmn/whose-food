@@ -71,9 +71,9 @@ model = network.train_model(model, criterion, optimizer, scheduler,
 
 # %%
 
-# visualize some parts
+# visualize some predictions
 util.visualize_model(model, dataloaders, class_names, num_images=6)
-
+plt.show()
 
 # %%
 
