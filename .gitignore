@@ -1,2 +1,4 @@
 data
 .idea
+results
+__pycache__
