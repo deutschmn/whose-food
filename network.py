@@ -94,8 +94,7 @@ def build_model(base_model, class_names, pretrained=True,
     :param freeze_gradients: whether to freeze gradients in training or not
     :return: model
     """
-    model = base_model(pretrained=True)
-    freeze_gradients = False
+    model = base_model(pretrained=pretrained)
     if freeze_gradients:
         for param in model.parameters():
             param.requires_grad = False
